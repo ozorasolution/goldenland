@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400..700&display=swap');
+:root{
+    --primary: #06B1FC;
+    --primary-dark: #006AA1;
+    --secondary: #00BF63;
+    --secondary-dark: #038043;
+}
+
+body{
+}
+
+.logo img{
+    max-width: 90px;
+}
+
+.tp-leftarrow.tparrows, .tp-rightarrow.tparrows, .tp-bullet{
+    display: none;
+}
+
+* {
+    font-family: "El Messiri", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "El Messiri", sans-serif;
+}
+
+.navbar-nav li a{
+    font-weight: 900;
+}
+
+.slider .slide--headline{
+    font-family: "El Messiri", sans-serif;
+    margin-top: 2rem;
+}
+
+.ozora-btn {
+    width: auto !important;
+    font-family: "El Messiri", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 30px;
+    transition: all .3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: .85em 1.3em;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.ozora-btn.btn-primary{
+    background-color: var(--primary);
+    transition: all 0.3s ease;
+}
+.ozora-btn.btn-primary:hover, .ozora-btn.btn-primary:focus{
+    background-color: var(--primary-dark);
+}
+
+.ozora-btn.btn-secondary{
+    color: white;
+    background-color: var(--secondary);
+    transition: all 0.3s ease;
+}
+.ozora-btn.btn-secondary:hover, .ozora-btn.btn-secondary:focus{
+    background-color: var(--secondary-dark);
+}
+
+.heading--title {
+    color: var(--primary-dark);
+}
+
+.row-gap{
+    margin-bottom: 3rem;
+}
+
+.perum-list{
+    width: 100%;
+}
+
+.perum-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.perum-container .layer {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.perum-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    margin: 0;
+    transition: all 0.5s ease;
+}
+
+.perum-container .button {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s ease;
+}
+
+.perum-container:hover .title {
+    bottom: 50%;
+}
+
+.perum-container:hover .button{
+    top: 70%;
+}
+
+.perum-container:hover .layer{
+    opacity: 0.7;
+}
+
+.row.jadwalkan{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#jadwalkan{
+    background-color: #004AAD;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+#jadwalkan .container{
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.jadwalkan .image{
+    width: 100%;
+    background-color: red;
+}
+.jadwalkan .info{
+    padding: 5rem 3rem;
+    width: 100%;
+    background-image: url("/assets/img/bg-jadwal.png");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-size: 100% 100%;
+}
+
+.jadwalkan .info h1, .jadwalkan .info h6{
+    color: white;
+    text-align: left;
+}
+
+.jadwalkan .info h6{
+    line-height: 1.6;
+}
+
+.jadwalkan .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 992px) {
+    .jadwalkan .image, .jadwalkan .info{
+        width: 50%;
+    }
+
+    .jadwalkan .info{
+        padding: 10rem 3rem;
+    }
+}
